@@ -10,5 +10,6 @@ $(function() {
         }
     );
 
+    $(".youtube-link").grtyoutube();
 
 })
