@@ -61,6 +61,7 @@ body{
     font-size: 14px;
     font-style: normal;
     color: #242121;
+    letter-spacing: 0.6px;
 }
 
 .wrapper {
@@ -78,7 +79,6 @@ body{
     font-weight: 600;
     font-size: 48px;
     line-height: 56px;
-    letter-spacing: 0.6px;
     color: #01353E;
     position: relative;
     display: inline-block;
@@ -158,7 +158,6 @@ body{
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
-    letter-spacing: 0.6px;
     color: #000000;
 }
 
@@ -185,7 +184,6 @@ body{
     font-weight: 300;
     font-size: 14px;
     line-height: 18px;
-    letter-spacing: 0.6px;
     color: #242121;
     margin-bottom: 30px;
     width: 480px;
@@ -229,8 +227,6 @@ body{
     max-width: 185px;
     font-size: 24px;
     line-height: 24px;
-    letter-spacing: 0.6px;
-
 }
 
 .servises__item-ico{
@@ -241,7 +237,6 @@ body{
     font-weight: 300;
     font-size: 14px;
     line-height: 18px;
-    letter-spacing: 0.6px;
 }
 
 .about__info{
@@ -266,13 +261,11 @@ body{
     font-weight: 300;
     font-size: 14px;
     line-height: 18px;
-    letter-spacing: 0.6px;
 }
 .about__scale-percent {
     font-weight: 400;
     font-size: 24px;
     line-height: 18px;
-    letter-spacing: 0.6px;
 }
 
 .about__additional-info{
@@ -293,7 +286,6 @@ body{
     font-weight: 300;
     font-size: 14px;
     line-height: 18px;
-    letter-spacing: 0.6px;
     margin-bottom: 30px;
 }
 
@@ -310,7 +302,6 @@ body{
     font-weight: 300;
     font-size: 14px;
     line-height: 18px;
-    letter-spacing: 0.6px;
 }
 
 /*--------------------GALLERY*/
@@ -335,7 +326,6 @@ body{
     font-weight: 400;
     font-size: 24px;
     line-height: 18px;
-    letter-spacing: 0.6px;
 }
 
 .gallery__filter-item button {
@@ -343,6 +333,11 @@ body{
     background-color: transparent;
     transition: .5s;
     cursor: pointer;
+}
+
+.gallery__btn:hover{
+    background-color: #00B2A0;
+    color: white;
 }
 
 .gallery__filter-item button:hover{
@@ -370,9 +365,9 @@ body{
     font-weight: 400;
     font-size: 24px;
     line-height: 18px;
-    letter-spacing: 0.6px;
     background: transparent;
     border: 1px solid #C4C4C4;
+    transition: 0.4s;
 
 }
 
@@ -397,14 +392,12 @@ body{
     font-weight: 400;
     font-size: 36px;
     line-height: 40px;
-    letter-spacing: 0.6px;
 }
 .blockquoute__author {
     font-style: italic;
     font-weight: 300;
     font-size: 14px;
     line-height: 18px;
-    letter-spacing: 0.6px;
     text-align: right;
 }
 
@@ -431,13 +424,11 @@ body{
     font-weight: 700;
     font-size: 64px;
     line-height: 75px;
-    letter-spacing: 0.6px;
 }
 .nums__info-decr {
     font-weight: 300;
     font-size: 14px;
     line-height: 18px;
-    letter-spacing: 0.6px;
 }
 
 /*--------------------BLOG*/
@@ -473,14 +464,12 @@ body{
     font-weight: 400;
     font-size: 48px;
     line-height: 56px;
-    letter-spacing: 0.6px;
 }
 
 .slider__item-decrs{
     font-weight: 300;
     font-size: 14px;
     line-height: 18px;
-    letter-spacing: 0.6px;
 }
 
 .slick-dots{
@@ -510,16 +499,220 @@ body{
 
 /*--------------------TEAM*/
 .team {
+    padding-bottom: 240px;
+}
+
+.team__title-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 212px;
+}
+
+.team__items{
+    display: flex;
+    justify-content: space-around;
+}
+
+.team__name{
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 25px;
+}
+
+.team__descr{
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 5px;
 }
 
 /*--------------------PRICES*/
 .prices {
+    padding: 200px 0 200px;
+    background-color: #F8F8F8;
+}
+
+.prices__title-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 212px;
+}
+
+.prices__items{
+    display: flex;
+    justify-content: space-around;
+}
+
+.prices__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    height: 577px;
+    width: 360px;
+}
+
+.prices__item-title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+}
+.prices__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 208px;
+}
+.prices__list-item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+.prices__price {
+    position: relative;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.prices__price sub{
+    position: absolute;
+    top: 20%;
+    right: -15px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+/*----------------------MAP*/
+
+.map{
+    padding: 200px 0 200px;
+}
+
+.map__container{
+    position: relative;
+}
+
+.map__pin{
+    position: absolute;
+    top: 60px;
+    right: 572px;
 }
 
 /*--------------------CONTACT*/
 .contact {
+    padding-bottom: 200px;
+}
+
+.contact__title-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 243px;
+}
+
+.contact__info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+
+.contact__form{
+    max-width: 570px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__form input {
+    border: none;
+    border-bottom: 1px solid #DADADA;
+    margin-bottom: 32px;
+    color: #00B2A0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    outline: none;
+    padding: 18px 0;
+}
+
+.contact__form input::placeholder{
+    color: #00B2A0;
+}
+
+.contact__form textarea{
+    border: none;
+    border-bottom: 1px solid #DADADA;
+    margin-bottom: 32px;
+    color: #00B2A0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    outline: none;
+    resize: none;
+}
+
+.contact__form textarea::placeholder{
+    width: 260px;
+    color: #00B2A0;
+}
+
+.contact__form button{
+    width: 350px;
+    height: 70px;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 18px;
+    transition: 0.4s;
+}
+
+.contact__form button:hover{
+    background-color: #00B2A0;
+    color: white;
+}
+
+.contact__text{
+    width: 600px;
+    height: 460px;
+    background-color: #F8F8F8;
+}
+
+.contact__text p {
+    width: 320px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    margin: 50px 52px 65px;
+}
+
+.contact__social{
+    display: flex;
+    justify-content: center;
+}
+
+.contact__social a{
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 18px;
+    transition: 0.4s;
+}
+
+.contact__social a:hover{
+    color: #00B2A0;
 }
 
 /*--------------------FOOTER*/
 .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background-color: #00B2A0;
 }
