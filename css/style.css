@@ -422,8 +422,6 @@ body{
     align-items: center;
     justify-content: center;
 }
-.nums__info-item {
-}
 
 .nums__info-item + .nums__info-item{
     margin-left: 100px;
@@ -444,6 +442,70 @@ body{
 
 /*--------------------BLOG*/
 .blog {
+    padding-bottom: 200px;
+}
+
+.blog__title-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 230px;
+}
+
+.blog__slider-item{
+    position: relative;
+}
+
+.blog__slider-item img{
+    filter: brightness(70%);
+    z-index: 1;
+}
+
+.slider__item-text{
+    position: absolute;
+    color: white;
+    right: 5%;
+    top: 50%;
+    max-width: 600px;
+    z-index: 10;
+}
+
+.slider__item-header{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0.6px;
+}
+
+.slider__item-decrs{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.6px;
+}
+
+.slick-dots{
+    display: flex;
+    position: absolute;
+    right: 40%;
+    bottom: 10%;
+}
+
+.slick-dots button{
+    margin-left: 15px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    font-size: 0;
+    border: none;
+    transition: 0.6s;
+}
+
+.slick-dots button:hover{
+    transform: scale(1.2);
+}
+
+.slick-active button{
+    background-color: #00B2A0;
 }
 
 /*--------------------TEAM*/

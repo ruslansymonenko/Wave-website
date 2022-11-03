@@ -12,4 +12,10 @@ $(function() {
 
     $(".youtube-link").grtyoutube();
 
+    $('.blog__slider').slick(
+        {
+            arrows: false,
+            dots: true,
+        }
+    );
 })
