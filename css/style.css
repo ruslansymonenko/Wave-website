@@ -903,6 +903,11 @@ body{
     .services__items{
         margin-bottom: 50px;
     }
+
+    /*Gallery*/
+    .gallery__title{
+        margin: 0 auto 100px;
+    }
 }
 
 @media (max-width: 625px) {
@@ -934,6 +939,10 @@ body{
 
     .servises__title{
         margin-bottom: 50px;
+    }
+
+    .about__additional-info{
+        padding: 40px 0 40px;
     }
 }
 
@@ -973,5 +982,22 @@ body{
 
     .about__scale-wave{
         margin-bottom: 15px;
+    }
+
+
+
+    /*Gallery*/ 
+
+    .gallery__filter-item + .gallery__filter-item {
+        margin-left: 10px;
+    }
+
+    .gallery__filter-item {
+        font-size: 16px;
+        line-height: 14px;
+    }
+
+    .gallery__btn {
+        width: 250px;
     }
 }
