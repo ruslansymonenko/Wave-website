@@ -18,4 +18,8 @@ $(function() {
             dots: true,
         }
     );
+
+    $('.burger__btn').on('click', () => {
+        $('.nav__list').toggleClass('nav__list-active');
+    })
 })

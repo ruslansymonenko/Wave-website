@@ -121,6 +121,11 @@ body{
     display: flex;
     align-items: center;
 }
+
+.burger__btn{
+    display: none;
+}
+
 .nav__list {
     display: flex;
     font-weight: 400;
@@ -598,10 +603,10 @@ body{
     position: relative;
 }
 
-.map__pin{
+.map__pin {
     position: absolute;
-    top: 60px;
-    right: 572px;
+    top: 12%;
+    right: 46%;
 }
 
 /*--------------------CONTACT*/
@@ -715,4 +720,480 @@ body{
     justify-content: center;
     height: 200px;
     background-color: #00B2A0;
+}
+
+
+
+/*ADAPTIVE*/
+
+@media (max-width: 1550px) {
+    /*Header*/
+    .header__top{
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 1300px) {
+    .title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .about__desrc,
+    .about__additional-info,
+    .video,
+    .prices,
+    .map{
+        padding: 80px 0 80px;
+    }
+
+    /*Header*/
+    .header__nav{
+        margin-right: 50px;
+    }
+
+    .nav__list-item + .nav__list-item {
+        margin-left: 25px;
+    }
+
+    .main__header{
+        font-size: 160px;
+        line-height: 150px;
+    }
+
+    /*About*/
+    .descr__title {
+        margin-bottom: 65px;
+    }
+
+    .about__text-item{
+        width: 384px;
+        height: 120px;
+    }
+
+    .services__items{
+        display: block;
+    }
+
+    .servises__item{
+        margin-bottom: 70px;
+    }
+
+    .servises__item + .servises__item{
+        margin-left: 0;
+    }
+
+    .about__info{
+        display: block;
+    }
+
+    .about__scale{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__scale{
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .about__info-text{
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 400px;
+    }
+
+    .about__additional-info-text{
+        max-width: 400px;
+    }
+
+    .about__additional-info-text p {
+        column-count: 2;
+    }
+
+    /*Gallery*/
+    .gallery{
+        margin-bottom: 100px;
+    }
+
+    /*Video*/
+    .video__blockquote{
+        margin-bottom: 120px;
+    }
+
+    /*Blog*/
+    .blog{
+        padding-bottom: 80px;
+    }
+
+    .blog__title-container{
+        margin-bottom: 100px;
+    }
+
+    /*Team*/
+    .team{
+        padding-bottom: 100px;
+    }
+
+    .team__title-container{
+        margin-bottom: 80px;
+    }
+
+    /*Prices*/
+    .prices__title-container{
+        margin-bottom: 80px;
+    }
+
+    .prices__items{
+        display: block;
+    }
+
+    .prices__item{
+        margin: 20px auto;
+    }
+
+    /*Contact*/
+    .contact{
+        padding-bottom: 100px;
+    }
+
+    .contact__title-container{
+        margin-bottom: 80px;
+    }
+
+    .contact__info{
+        display: block;
+        margin-bottom: 100px;
+    }
+
+    .contact__form{
+        margin: 20px auto;
+    }
+
+    .contact__form button{
+        margin: 0 auto;
+    }
+
+    .contact__text{
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .contact__text p{
+        margin: 50px auto;
+    }
+
+    /*Footer*/
+    .footer{
+        height: 100px;
+    }
+}
+
+@media (max-width: 1067px) {
+    .team__items{
+        display: block;
+    }
+
+    .team__item{
+        margin-bottom: 20px;
+    }
+
+    .team__item img{
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 978px) {
+    /*Header*/
+    .header{
+        position: relative;
+    }
+
+    .header__top{
+        justify-content: space-between;
+        margin-bottom: 470px;
+        padding: 20px 0 0;
+        background-color: #002E36;
+    }
+
+    .logo{
+        margin-left: 20px;
+    }
+
+    .burger__btn{
+        height: 70px;
+        width: 70px;
+        background-color: transparent;
+        border: none;
+        filter: invert(1);
+        display: block;
+    }
+
+    .nav__list{
+        transform: translateY(-200%);
+        display: block;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        transition: ease 0.7s;
+        color: black;
+        width: 100%;
+        background-color: white;
+    }
+
+    .nav__list-active{
+        transform: translateY(0%);
+    }
+
+    .nav__list-item{
+        text-align: center;
+        margin: 20px 0;
+        font-weight: 600;
+    }
+
+    .nav__list-item + .nav__list-item{
+        margin-left: 0;
+    }
+
+    .main__header{
+        font-size: 120px;
+        line-height: 130px;
+    }
+
+    .about__additional-info{
+        background-image: none;
+    }
+
+    .about__additional-info-text{
+        max-width: 100%;
+    }
+
+    .about__additional-info-text p{
+        column-count: 1;
+    }
+
+    .about__additional-info-title{
+        margin-bottom: 50px;
+    }
+
+    /*Video*/
+    .nums__info-item + .nums__info-item{
+        margin-left: 50px;
+    }
+
+    .nums__info-num{
+        font-size: 44px;
+        line-height: 55px;
+    }
+
+    .video__box{
+        margin-bottom: 80px;
+    }
+
+    /*Blog*/
+    .slider__item-header{
+        max-width: 400px;
+        font-size: 28px;
+        line-height: 24px;
+    }
+
+    .slider__item-text{
+        top: 25%;
+    }
+
+    .footer {
+        max-width: 978px;
+    }
+}
+
+@media (max-width: 820px) {
+    /*About*/
+    .about__text{
+        column-count: 1;
+    }
+
+    .about__text-item{
+        width: 450px;
+        height: 100px;
+    }
+
+    .about__text-item--inactive{
+        display: none;
+    }
+
+    .services__items{
+        margin-bottom: 50px;
+    }
+
+    /*Gallery*/
+    .gallery__title{
+        margin: 0 auto 100px;
+    }
+
+    /*Video*/
+
+    .blockquoute__text{
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    /*Contact*/
+
+    .contact__text{
+        width: 310px;
+    }
+
+    .contact__form button{
+        width: 310px;
+    }
+
+    .contact__social a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 625px) {
+    .title {
+        font-size: 20px;
+    }
+    /*Header*/
+    .header__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__header{
+        font-size: 80px;
+        line-height: 100px;
+    }
+
+    .header_decr{
+        font-size: 16px;
+        max-width: 320px;
+        margin: 0 30px;
+    }
+
+    /*About*/
+    .about__desrc{
+        padding: 40px 0 40px;
+    }
+
+    .servises__title{
+        margin-bottom: 50px;
+    }
+
+    .about__additional-info{
+        padding: 40px 0 40px;
+    }
+
+    /*Video*/
+    .nums__info-item + .nums__info-item{
+        margin-left: 20px;
+    }
+
+    .nums__info-num{
+        font-size: 24px;
+        line-height: 25px;
+    }
+
+    /*Blog*/
+    .slider__item-header{
+        font-size: 18px;
+    }
+
+    .slick-dots{
+        right: 14%;
+    }
+
+    .slick-dots button {
+        width: 12px;
+        height: 12px;
+    }
+
+    .slider__item-text{
+        margin: 10px 15px;
+    }
+
+    .slider__item-text{
+        top: 9%;
+    }
+
+    .slider__item-header{
+        font-size: 14px;
+    }
+    .slider__item-decrs{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 478px) {
+    /*About*/
+    .title::after{
+        height: 40px;
+        right: -15px;
+        bottom: -16px;
+    }
+
+    .descr__title{
+        max-width: 320px;
+    }
+
+    .about__text-item{
+        width: 320px;
+        height: 130px;
+    }
+
+    .servises__item{
+        text-align: center;
+    }
+
+    .servises__item-name{
+        font-size: 16px;
+    }
+
+    .servises__item-text{
+        max-width: 300px;
+        margin-left: 10px;
+    }
+
+    .about__scale-scale{
+        width: 260px;
+    }
+
+    .about__scale-wave{
+        margin-bottom: 15px;
+    }
+
+    /*Gallery*/ 
+
+    .gallery__filter-item + .gallery__filter-item {
+        margin-left: 10px;
+    }
+
+    .gallery__filter-item {
+        font-size: 16px;
+        line-height: 14px;
+    }
+
+    .gallery__btn {
+        width: 250px;
+    }
+
+    /*Video*/
+    .blockquoute__text{
+        font-size: 16px;
+        font-weight: 18px;
+    }
+
+    .prices__list-item{
+        max-width: 300px;
+    }
+
+    .prices__item{
+        width: 310px;
+    }
 }
