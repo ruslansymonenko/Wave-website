@@ -603,10 +603,10 @@ body{
     position: relative;
 }
 
-.map__pin{
+.map__pin {
     position: absolute;
-    top: 60px;
-    right: 572px;
+    top: 12%;
+    right: 46%;
 }
 
 /*--------------------CONTACT*/
@@ -740,7 +740,10 @@ body{
     }
 
     .about__desrc,
-    .about__additional-info{
+    .about__additional-info,
+    .video,
+    .prices,
+    .map{
         padding: 80px 0 80px;
     }
 
@@ -808,6 +811,98 @@ body{
 
     .about__additional-info-text p {
         column-count: 2;
+    }
+
+    /*Gallery*/
+    .gallery{
+        margin-bottom: 100px;
+    }
+
+    /*Video*/
+    .video__blockquote{
+        margin-bottom: 120px;
+    }
+
+    /*Blog*/
+    .blog{
+        padding-bottom: 80px;
+    }
+
+    .blog__title-container{
+        margin-bottom: 100px;
+    }
+
+    /*Team*/
+    .team{
+        padding-bottom: 100px;
+    }
+
+    .team__title-container{
+        margin-bottom: 80px;
+    }
+
+    /*Prices*/
+    .prices__title-container{
+        margin-bottom: 80px;
+    }
+
+    .prices__items{
+        display: block;
+    }
+
+    .prices__item{
+        margin: 20px auto;
+    }
+
+    /*Contact*/
+    .contact{
+        padding-bottom: 100px;
+    }
+
+    .contact__title-container{
+        margin-bottom: 80px;
+    }
+
+    .contact__info{
+        display: block;
+        margin-bottom: 100px;
+    }
+
+    .contact__form{
+        margin: 20px auto;
+    }
+
+    .contact__form button{
+        margin: 0 auto;
+    }
+
+    .contact__text{
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .contact__text p{
+        margin: 50px auto;
+    }
+
+    /*Footer*/
+    .footer{
+        height: 100px;
+    }
+}
+
+@media (max-width: 1067px) {
+    .team__items{
+        display: block;
+    }
+
+    .team__item{
+        margin-bottom: 20px;
+    }
+
+    .team__item img{
+        margin: 0 auto;
     }
 }
 
@@ -883,6 +978,35 @@ body{
     .about__additional-info-title{
         margin-bottom: 50px;
     }
+
+    /*Video*/
+    .nums__info-item + .nums__info-item{
+        margin-left: 50px;
+    }
+
+    .nums__info-num{
+        font-size: 44px;
+        line-height: 55px;
+    }
+
+    .video__box{
+        margin-bottom: 80px;
+    }
+
+    /*Blog*/
+    .slider__item-header{
+        max-width: 400px;
+        font-size: 28px;
+        line-height: 24px;
+    }
+
+    .slider__item-text{
+        top: 25%;
+    }
+
+    .footer {
+        max-width: 978px;
+    }
 }
 
 @media (max-width: 820px) {
@@ -907,6 +1031,27 @@ body{
     /*Gallery*/
     .gallery__title{
         margin: 0 auto 100px;
+    }
+
+    /*Video*/
+
+    .blockquoute__text{
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    /*Contact*/
+
+    .contact__text{
+        width: 310px;
+    }
+
+    .contact__form button{
+        width: 310px;
+    }
+
+    .contact__social a{
+        font-size: 16px;
     }
 }
 
@@ -943,6 +1088,45 @@ body{
 
     .about__additional-info{
         padding: 40px 0 40px;
+    }
+
+    /*Video*/
+    .nums__info-item + .nums__info-item{
+        margin-left: 20px;
+    }
+
+    .nums__info-num{
+        font-size: 24px;
+        line-height: 25px;
+    }
+
+    /*Blog*/
+    .slider__item-header{
+        font-size: 18px;
+    }
+
+    .slick-dots{
+        right: 14%;
+    }
+
+    .slick-dots button {
+        width: 12px;
+        height: 12px;
+    }
+
+    .slider__item-text{
+        margin: 10px 15px;
+    }
+
+    .slider__item-text{
+        top: 9%;
+    }
+
+    .slider__item-header{
+        font-size: 14px;
+    }
+    .slider__item-decrs{
+        font-size: 12px;
     }
 }
 
@@ -984,8 +1168,6 @@ body{
         margin-bottom: 15px;
     }
 
-
-
     /*Gallery*/ 
 
     .gallery__filter-item + .gallery__filter-item {
@@ -999,5 +1181,19 @@ body{
 
     .gallery__btn {
         width: 250px;
+    }
+
+    /*Video*/
+    .blockquoute__text{
+        font-size: 16px;
+        font-weight: 18px;
+    }
+
+    .prices__list-item{
+        max-width: 300px;
+    }
+
+    .prices__item{
+        width: 310px;
     }
 }
