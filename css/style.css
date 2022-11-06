@@ -121,6 +121,11 @@ body{
     display: flex;
     align-items: center;
 }
+
+.burger__btn{
+    display: none;
+}
+
 .nav__list {
     display: flex;
     font-weight: 400;
@@ -715,4 +720,113 @@ body{
     justify-content: center;
     height: 200px;
     background-color: #00B2A0;
+}
+
+
+
+/*ADAPTIVE*/
+
+@media (max-width: 1550px) {
+    /*Header*/
+    .header__top{
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 1300px) {
+    /*Header*/
+    .header__nav{
+        margin-right: 50px;
+    }
+
+    .nav__list-item + .nav__list-item {
+        margin-left: 25px;
+    }
+
+    .main__header{
+        font-size: 160px;
+        line-height: 150px;
+    }
+}
+
+@media (max-width: 978px) {
+    /*Header*/
+    .header{
+        position: relative;
+    }
+
+    .header__top{
+        justify-content: space-between;
+        margin-bottom: 470px;
+        padding: 20px 0 0;
+        background-color: #002E36;
+    }
+
+    .logo{
+        margin-left: 20px;
+    }
+
+    .burger__btn{
+        height: 70px;
+        width: 70px;
+        background-color: transparent;
+        border: none;
+        filter: invert(1);
+        display: block;
+    }
+
+    .nav__list{
+        transform: translateY(-200%);
+        display: block;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        transition: ease 0.7s;
+        color: black;
+        width: 100%;
+        background-color: white;
+    }
+
+    .nav__list-active{
+        transform: translateY(0%);
+    }
+
+    .nav__list-item{
+        text-align: center;
+        margin: 20px 0;
+        font-weight: 600;
+    }
+
+    .nav__list-item + .nav__list-item{
+        margin-left: 0;
+    }
+
+    .main__header{
+        font-size: 120px;
+        line-height: 130px;
+    }
+}
+
+@media (max-width: 625px) {
+    /*Header*/
+    .header__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__header{
+        font-size: 80px;
+        line-height: 100px;
+    }
+
+    .header_decr{
+        font-size: 16px;
+        max-width: 320px;
+        margin: 0 30px;
+    }
+}
+
+@media (max-width: 425px) {
+
 }
